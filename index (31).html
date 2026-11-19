@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; frame-src https://www.google.com;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ristorante Il Drago Rosso – Cucina tipica marchigiana a Colli al Metauro (PU)</title>
+<meta name="description" content="Ristorante Bar Il Drago Rosso a Villanova di Montemaggiore al Metauro: pasta fatta in casa, arrosti, selvaggina, piadina e dolci artigianali. Prenota su WhatsApp.">
+<style>
+:root{--avorio:#FAF7F2;--sabbia:#F2ECE1;--carbone:#18181B;--rosso:#991B1B;--oro:#B45309;--testo:#2a2522;--muto:#6b625b;--linea:#e2d9c9;
+--serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);background:var(--avorio);color:var(--testo);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+section{padding:72px 0}
+.alt{background:var(--sabbia)}
+.dark{background:var(--carbone);color:#eee7da}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin-bottom:14px;color:var(--rosso)}
+.dark h2{color:#f1d9a8}
+.lead{max-width:62ch;color:var(--muto);margin-bottom:34px}
+.dark .lead{color:#c9bfae}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--carbone);color:#f4ede0;border-bottom:1px solid #2c2c31}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:38px;height:38px;flex:none}
+.logo b{display:block;font-family:var(--serif);font-size:1.25rem;letter-spacing:.14em;color:#fff;font-weight:600;line-height:1.1}
+.logo small{display:block;font-size:.58rem;letter-spacing:.16em;color:#d6a45a;margin-top:3px}
+nav{display:none;gap:24px;font-size:.95rem}
+nav a{text-decoration:none;color:#d8cfbf}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:4px;font:600 .98rem var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn-r{background:var(--rosso);color:#fff}.btn-r:hover{background:#7f1616}
+.btn-l{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}.btn-l:hover{background:rgba(255,255,255,.12)}
+.btn-o{border-color:var(--rosso);color:var(--rosso);background:transparent}.btn-o:hover{background:var(--rosso);color:#fff}
+.hbtn{padding:9px 16px;font-size:.88rem}
+@media(min-width:900px){nav{display:flex}}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:0;background:var(--carbone);min-height:min(88vh,760px);display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,24,27,.35) 0%,rgba(24,24,27,.88) 78%)}
+.hero .wrap{position:relative;z-index:2;padding:110px 0 54px}
+.eyebrow{font-size:.74rem;letter-spacing:.14em;color:#f1c98a;margin-bottom:18px}
+.hero h1{font-size:clamp(1.9rem,6vw,3.5rem);max-width:19ch;margin-bottom:18px}
+.hero h1 span{display:block;font-size:.5em;font-weight:400;font-style:italic;max-width:30ch;margin-top:12px;color:#f2e6d2}
+.hero p{max-width:60ch;color:#eadfcb;margin-bottom:28px;font-style:italic}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* gallery */
+.grid3{display:grid;gap:22px}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--linea);border-radius:6px;overflow:hidden;text-align:left;cursor:pointer;font:inherit;color:inherit;padding:0}
+.card .ph{aspect-ratio:4/3;background:#d9cdb8 center/cover;overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover img{transform:scale(1.04)}
+.card div.t{padding:18px 20px 22px}
+.card h3{font-size:1.15rem;margin-bottom:6px;color:var(--rosso)}
+.card p{font-size:.94rem;color:var(--muto)}
+dialog{border:0;background:transparent;max-width:96vw;max-height:94vh;margin:auto}
+dialog::backdrop{background:rgba(10,10,12,.88)}
+dialog img{max-height:80vh;border-radius:4px;margin-inline:auto}
+dialog p{color:#eee;text-align:center;margin-top:10px;font-size:.95rem}
+dialog button{position:absolute;top:-6px;right:-2px;background:#fff;border:0;border-radius:50%;width:38px;height:38px;font-size:1.3rem;cursor:pointer}
+
+/* menu */
+.menu{display:grid;gap:26px}
+@media(min-width:820px){.menu{grid-template-columns:1fr 1fr}}
+.m{background:var(--avorio);border:1px solid var(--linea);border-left:4px solid var(--rosso);padding:26px 26px 22px;border-radius:4px}
+.m:nth-child(even){border-left-color:var(--oro)}
+.m h3{font-size:1.25rem;margin-bottom:12px}
+.m li{list-style:none;padding:8px 0;border-bottom:1px dotted #cdbfa8}
+.m li:last-child{border:0}
+.m em{color:var(--muto);font-size:.9rem;display:block}
+.note{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#f1d9a8;max-width:60ch}
+.trad{padding:56px 0}
+.trad .note{margin:0;font-size:1.35rem}
+
+/* booking */
+.book{max-width:720px;margin-inline:auto;background:#fff;border:1px solid var(--linea);border-radius:8px;padding:28px}
+@media(min-width:600px){.book{padding:38px}}
+.steps{display:flex;gap:8px;margin-bottom:26px;font-size:.85rem;color:var(--muto)}
+.steps span{flex:1;padding-bottom:8px;border-bottom:3px solid var(--linea)}
+.steps span.on{border-color:var(--rosso);color:var(--rosso);font-weight:600}
+.pane{display:none;border:0}.pane.on{display:block}
+legend,label.l{font-weight:600;display:block;margin:18px 0 8px;font-size:.95rem}
+.opts{display:grid;gap:10px}
+@media(min-width:560px){.opts.two{grid-template-columns:1fr 1fr}}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0}
+.opt span{display:block;padding:12px 14px;border:1.5px solid var(--linea);border-radius:5px;background:var(--avorio);cursor:pointer;font-size:.95rem}
+.opt input:checked+span{border-color:var(--rosso);background:#fbeeee;color:var(--rosso);font-weight:600}
+.opt input:focus-visible+span{outline:3px solid var(--oro);outline-offset:2px}
+.f{width:100%;padding:12px 14px;border:1.5px solid var(--linea);border-radius:5px;font:inherit;background:var(--avorio)}
+.row{display:grid;gap:14px}
+@media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
+.nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;justify-content:space-between}
+.err{color:var(--rosso);font-size:.9rem;margin-top:12px;min-height:1.2em}
+.chk{display:flex;gap:10px;align-items:flex-start;margin-top:18px;font-size:.9rem;color:var(--muto)}
+.chk input{margin-top:5px;width:18px;height:18px;accent-color:var(--rosso)}
+.wa{background:#166534}.wa:hover{background:#14532d}
+
+/* info */
+.info{display:grid;gap:34px}
+@media(min-width:820px){.info{grid-template-columns:1fr 1fr}}
+table{width:100%;border-collapse:collapse}
+td{padding:11px 0;border-bottom:1px solid var(--linea)}
+td:last-child{text-align:right;font-weight:600}
+.chiuso{color:var(--muto);font-weight:400!important}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 28px}
+.badges li{list-style:none;display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid var(--linea);border-radius:30px;background:#fff;font-size:.9rem;color:var(--testo)}
+.badges svg{color:var(--oro)}
+.contacts p{display:flex;gap:12px;margin-bottom:12px}
+.contacts svg{color:var(--rosso);margin-top:3px}
+.contacts a{text-decoration:none;border-bottom:1px solid var(--oro)}
+.map{margin-top:34px;aspect-ratio:16/8;min-height:260px;background:var(--sabbia);border:1px solid var(--linea);border-radius:6px;display:grid;place-items:center;text-align:center;padding:20px;overflow:hidden}
+.map iframe{width:100%;height:100%;border:0;min-height:260px}
+.map p{color:var(--muto);margin-bottom:14px;max-width:46ch;font-size:.92rem}
+
+/* privacy & footer */
+details{background:#fff;border:1px solid var(--linea);border-radius:6px;padding:16px 20px;margin-top:34px}
+summary{cursor:pointer;font-weight:600;color:var(--rosso)}
+details div{margin-top:14px;font-size:.93rem;color:var(--muto)}
+details h3{font-size:1rem;color:var(--testo);margin:14px 0 4px}
+footer{background:var(--carbone);color:#bdb3a2;padding:44px 0 90px;font-size:.92rem}
+footer .logo b{font-size:1.1rem}
+footer .cols{display:grid;gap:22px}
+@media(min-width:760px){footer .cols{grid-template-columns:1.2fr 1fr 1fr}}
+footer a{text-decoration:none;color:#e6dccb}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px;background:var(--carbone);border-top:1px solid #2c2c31}
+.sticky .btn{flex:1;padding:11px 8px;font-size:.9rem}
+@media(min-width:900px){.sticky{display:none}footer{padding-bottom:44px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="emb" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="#991B1B" stroke-width="1.6"/><path d="M12 33c4 3 9 3 12-1 2-3-1-6-4-5-3 1-3 5 0 6M20 27c3-8 9-9 12-14M32 13c3 0 5 1 6 3-2 0-3 1-4 2M25 20c4-1 8 1 10 5-3-1-6 0-8 2M30 32c3 1 5-1 6-4" fill="none" stroke="#d6a45a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="35" cy="16" r="1" fill="#991B1B"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3 3.500 6.500 6.500 6.500l1-1.500-2-1-1 .8c-1-.4-2-1.400-2.400-2.400l.8-1-1-2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+<symbol id="car" viewBox="0 0 24 24"><path d="M4 16V11l2-5h12l2 5v5M4 16h16M4 16v2h3v-2M17 16v2h3v-2"/><circle cx="8" cy="13" r=".8"/><circle cx="16" cy="13" r=".8"/></symbol>
+<symbol id="paw" viewBox="0 0 24 24"><circle cx="6" cy="11" r="1.800"/><circle cx="10" cy="6.500" r="1.800"/><circle cx="14" cy="6.500" r="1.800"/><circle cx="18" cy="11" r="1.800"/><path d="M8 18c0-3 2-5 4-5s4 2 4 5c0 2-2 2-4 1-2 1-4 1-4-1z"/></symbol>
+<symbol id="kid" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><path d="M6 21v-5a6 6 0 0 1 12 0v5M6 17h12"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+<symbol id="acc" viewBox="0 0 24 24"><circle cx="12" cy="4.500" r="1.600"/><path d="M12 8v6h5l2 5M12 11h4M8.500 11.500a5 5 0 1 0 6 7.500"/></symbol>
+<symbol id="card" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></symbol>
+<symbol id="fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+</defs>
+</svg>
+
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top" aria-label="Il Drago Rosso – inizio pagina">
+<svg aria-hidden="true"><use href="#emb"/></svg>
+<span><b>IL DRAGO ROSSO</b><small>RISTORANTE · BAR · CUCINA TIPICA MARCHIGIANA</small></span>
+</a>
+<nav aria-label="Principale"><a href="#ambienti">Ambienti</a><a href="#menu">Cucina</a><a href="#prenota">Prenota</a><a href="#orari">Orari e contatti</a></nav>
+<a class="btn btn-r hbtn" href="tel:+393296945499"><svg class="i" aria-hidden="true"><use href="#ph"/></svg>Chiama</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+<img src="img/sala-legno.jpg?v=1" alt="La sala in legno con travi a vista e banco bar del Ristorante Il Drago Rosso a Colli al Metauro" fetchpriority="high">
+<div class="wrap">
+<p class="eyebrow">VIA SAN LIBERIO 58 · VILLANOVA / MONTEMAGGIORE AL METAURO (PU)</p>
+<h1 id="h1">Ristorante Il Drago Rosso<span>Il calore della vera cucina casalinga marchigiana sulle colline del Metauro.</span></h1>
+<p>Pasta tirata a mano, arrosti e selvaggina della tradizione, piadina fatta in casa e dolci artigianali: due sale accoglienti e tavoli all'aperto per pranzi in famiglia, cene tra amici e serate fino a mezzanotte.</p>
+<div class="ctas">
+<a class="btn btn-r" href="#prenota"><svg class="i" aria-hidden="true"><use href="#wa"/></svg>Prenota un Tavolo su WhatsApp</a>
+<a class="btn btn-l" href="#menu">Scopri i Piatti della Tradizione</a>
+<a class="btn btn-l" href="tel:+393296945499"><svg class="i" aria-hidden="true"><use href="#ph"/></svg>Chiama Subito (329 694 5499)</a>
+</div>
+</div>
+</section>
+
+<section id="ambienti" class="alt" aria-labelledby="t-amb">
+<div class="wrap">
+<h2 id="t-amb">I nostri ambienti</h2>
+<p class="lead">Legno, luce e tavole apparecchiate con cura. Tocca una foto per ingrandirla.</p>
+<div class="grid3">
+<button class="card" data-src="img/sala-legno.jpg?v=1" data-cap="La Sala in Legno &amp; Il Bar">
+<div class="ph"><img src="img/sala-legno.jpg?v=1" alt="Sala in legno con travi a vista e banco bar" loading="lazy"></div>
+<div class="t"><h3>La Sala in Legno &amp; Il Bar</h3><p>Ambiente caldo con travi a vista e luce naturale, ideale per un pasto veloce, un aperitivo o il dopo cena.</p></div></button>
+<button class="card" data-src="img/ingresso-legno.jpg?v=1" data-cap="Accoglienza Familiare &amp; Tavoli All'Aperto">
+<div class="ph"><img src="img/ingresso-legno.jpg?v=1" alt="Ingresso e spazi esterni del ristorante" loading="lazy"></div>
+<div class="t"><h3>Accoglienza Familiare &amp; Tavoli All'Aperto</h3><p>Spazi tranquilli e luminosi adatti a famiglie, gruppi e bambini, con possibilità di pranzare all'aperto nella bella stagione.</p></div></button>
+<button class="card" data-src="img/sala-pranzo.jpg?v=1" data-cap="La Sala Ristorante per Pranzi &amp; Occasioni">
+<div class="ph"><img src="img/sala-pranzo.jpg?v=1" alt="Sala ristorante con tavoli apparecchiati" loading="lazy"></div>
+<div class="t"><h3>La Sala Ristorante per Pranzi &amp; Occasioni</h3><p>Sala apparecchiata con cura per i pranzi della domenica, cene tra amici e menù delle festività.</p></div></button>
+</div>
+</div>
+</section>
+<dialog id="lb" aria-label="Foto ingrandita"><button type="button" id="lbx" aria-label="Chiudi">&times;</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+
+<section class="dark trad" aria-label="Tradizione">
+<div class="wrap"><p class="note">«Cucina espressa e pasta fatta in casa secondo la tradizione marchigiana.»</p></div>
+</section>
+
+<section id="menu" aria-labelledby="t-menu">
+<div class="wrap">
+<h2 id="t-menu">Cucina tipica marchigiana e specialità</h2>
+<p class="lead">I piatti per cui Il Drago Rosso è conosciuto. Cucina espressa e pasta fatta in casa secondo la tradizione marchigiana.</p>
+<div class="menu">
+<div class="m"><h3>Primi piatti fatti in casa</h3><ul><li>Tortellini della tradizione</li><li>Cappelletti alla boscaiola</li><li>Tagliatelle al ragù di cinghiale</li><li>Ravioli e cannelloni al forno</li></ul></div>
+<div class="m"><h3>Secondi di carne &amp; piadina sfogliata</h3><ul><li>Coniglio in porchetta</li><li>Agnello fritto</li><li>Tagliata di manzo con patate arrosto</li><li>Stoccafisso della tradizione</li><li>Piadina fatta in casa con salumi e formaggi del territorio</li></ul></div>
+<div class="m"><h3>Dolci della casa &amp; cantina</h3><ul><li>Tiramisù artigianale</li><li>Dolci casalinghi del giorno</li><li>Vini marchigiani: Bianchello del Metauro, Sangiovese</li><li>Caffetteria e bar fino a mezzanotte</li></ul></div>
+<div class="m"><h3>Menù delle feste &amp; gruppi</h3><p>Proposte dedicate, su prenotazione, per:</p><ul><li>Pasqua</li><li>Natale e Vigilia di Natale</li><li>Ricorrenze e gruppi</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="prenota" class="alt" aria-labelledby="t-pre">
+<div class="wrap">
+<h2 id="t-pre">Prenota un tavolo o ordina d'asporto</h2>
+<p class="lead">Tre passi: il messaggio è già scritto, ti basta inviarlo su WhatsApp.</p>
+<form class="book" id="bk" novalidate>
+<div class="steps" aria-hidden="true"><span class="on">1. Cosa desideri</span><span>2. Data e ospiti</span><span>3. Nome e invio</span></div>
+
+<fieldset class="pane on" data-p="0">
+<legend>Di cosa hai bisogno?</legend>
+<div class="opts two">
+<label class="opt"><input type="radio" name="tipo" value="Prenotazione Tavolo al Ristorante" checked><span>Prenotazione Tavolo al Ristorante</span></label>
+<label class="opt"><input type="radio" name="tipo" value="Ordine Asporto"><span>Ordine Asporto</span></label>
+</div>
+<legend>Turno</legend>
+<div class="opts two">
+<label class="opt"><input type="radio" name="turno" value="Giovedì Sera 16:00–00:00" checked><span>Giovedì Sera 16:00–00:00</span></label>
+<label class="opt"><input type="radio" name="turno" value="Venerdì Sera 16:00–00:00"><span>Venerdì Sera 16:00–00:00</span></label>
+<label class="opt"><input type="radio" name="turno" value="Sabato Pranzo o Cena 11:00–00:00"><span>Sabato Pranzo o Cena 11:00–00:00</span></label>
+<label class="opt"><input type="radio" name="turno" value="Domenica Pranzo o Cena 11:00–00:00"><span>Domenica Pranzo o Cena 11:00–00:00</span></label>
+</div>
+<div class="nav"><span></span><button type="button" class="btn btn-r" data-go="1">Avanti</button></div>
+</fieldset>
+
+<fieldset class="pane" data-p="1">
+<div class="row">
+<div><label class="l" for="d">Data</label><input class="f" type="date" id="d"></div>
+<div><label class="l" for="o">Orario preferito</label><input class="f" type="time" id="o" min="11:00" step="900"></div>
+</div>
+<legend>Numero persone</legend>
+<div class="opts" style="grid-template-columns:repeat(5,1fr)">
+<label class="opt"><input type="radio" name="pp" value="2" checked><span style="text-align:center">2</span></label>
+<label class="opt"><input type="radio" name="pp" value="3"><span style="text-align:center">3</span></label>
+<label class="opt"><input type="radio" name="pp" value="4"><span style="text-align:center">4</span></label>
+<label class="opt"><input type="radio" name="pp" value="5"><span style="text-align:center">5</span></label>
+<label class="opt"><input type="radio" name="pp" value="6 o più"><span style="text-align:center">6+</span></label>
+</div>
+<legend>Preferenza</legend>
+<div class="opts two">
+<label class="opt"><input type="radio" name="pref" value="Sala principale ristorante" checked><span>Sala principale ristorante</span></label>
+<label class="opt"><input type="radio" name="pref" value="Saletta in legno / Bar"><span>Saletta in legno / Bar</span></label>
+<label class="opt"><input type="radio" name="pref" value="Tavoli all'aperto"><span>Tavoli all'aperto</span></label>
+<label class="opt"><input type="radio" name="pref" value="Seggiolone bambini / Cani al seguito"><span>Seggiolone bambini / Cani al seguito</span></label>
+</div>
+<p class="err" id="e1" role="alert"></p>
+<div class="nav"><button type="button" class="btn btn-o" data-go="0">Indietro</button><button type="button" class="btn btn-r" data-go="2">Avanti</button></div>
+</fieldset>
+
+<fieldset class="pane" data-p="2">
+<label class="l" for="n">Il tuo nome</label><input class="f" id="n" autocomplete="name" maxlength="60">
+<label class="l" for="nt">Note facoltative</label><textarea class="f" id="nt" rows="3" maxlength="300" placeholder="Allergie, occasione speciale, passeggino…"></textarea>
+<label class="chk"><input type="checkbox" id="pv"><span>Ho letto l'<a href="#privacy" id="pvl">informativa privacy</a> e acconsento all'uso dei miei dati solo per gestire questa richiesta.</span></label>
+<p class="err" id="e2" role="alert"></p>
+<div class="nav"><button type="button" class="btn btn-o" data-go="1">Indietro</button>
+<button type="submit" class="btn btn-r wa"><svg class="i" aria-hidden="true"><use href="#wa"/></svg>Invia Prenotazione su WhatsApp (329 694 5499)</button></div>
+<p style="margin-top:16px;text-align:center"><a class="btn btn-o" href="tel:+390721894696"><svg class="i" aria-hidden="true"><use href="#ph"/></svg>Preferisci chiamare? Fisso 0721 894696</a></p>
+</fieldset>
+</form>
+</div>
+</section>
+
+<section id="orari" aria-labelledby="t-or">
+<div class="wrap">
+<div class="info">
+<div>
+<h2 id="t-or">Orari</h2>
+<table aria-label="Orari di apertura">
+<tr><td>Lunedì – Mercoledì</td><td class="chiuso">Chiuso</td></tr>
+<tr><td>Giovedì – Venerdì</td><td>16:00 – 00:00</td></tr>
+<tr><td>Sabato – Domenica</td><td>11:00 – 00:00</td></tr>
+</table>
+<h2 style="margin-top:34px;font-size:1.4rem">Servizi</h2>
+<ul class="badges">
+<li><svg class="i"><use href="#car"/></svg>Ampio parcheggio gratuito</li>
+<li><svg class="i"><use href="#paw"/></svg>Cani ammessi</li>
+<li><svg class="i"><use href="#kid"/></svg>Bambini e seggioloni</li>
+<li><svg class="i"><use href="#sun"/></svg>Tavoli all'aperto</li>
+<li><svg class="i"><use href="#acc"/></svg>Accessibile in sedia a rotelle: ingresso, bagno, parcheggio e tavoli</li>
+<li><svg class="i"><use href="#card"/></svg>Carte e pagamenti NFC</li>
+</ul>
+</div>
+<div class="contacts">
+<h2>Contatti</h2>
+<p><svg class="i"><use href="#pin"/></svg><span>Via San Liberio, 58 – Villanova / Montemaggiore al Metauro,<br>61036 Colli al Metauro (PU)</span></p>
+<p><svg class="i"><use href="#wa"/></svg><span>Cell / WhatsApp: <a href="https://wa.me/393296945499">329 694 5499</a></span></p>
+<p><svg class="i"><use href="#ph"/></svg><span>Tel. fisso: <a href="tel:+390721894696">0721 894696</a></span></p>
+<p><svg class="i"><use href="#fb"/></svg><span>Facebook: <strong>Ristorante Il Drago Rosso</strong></span></p>
+<div class="map" id="map">
+<div><p>La mappa di Google si carica solo se lo desideri: finché non clicchi, nessun dato viene inviato a Google.</p>
+<button type="button" class="btn btn-r" id="mapb"><svg class="i"><use href="#pin"/></svg>Carica la mappa</button></div>
+</div>
+</div>
+</div>
+
+<details id="privacy">
+<summary>Informativa Privacy (GDPR, Reg. UE 2016/679)</summary>
+<div>
+<h3>Titolare del trattamento</h3><p>Ristorante Bar Il Drago Rosso, Via San Liberio 58, 61036 Colli al Metauro (PU) · Tel. 0721 894696.</p>
+<h3>Dati trattati e finalità</h3><p>Nome, data, orario, numero di persone, preferenze e note che inserisci nel modulo servono esclusivamente a preparare il messaggio di prenotazione o asporto. Il sito non salva né trasmette questi dati ai propri server: il messaggio viene aperto in WhatsApp sul tuo dispositivo e parte solo se lo invii tu.</p>
+<h3>Base giuridica</h3><p>Il tuo consenso (art. 6.1.a) e l'esecuzione di una tua richiesta (art. 6.1.b).</p>
+<h3>WhatsApp</h3><p>Una volta inviato, il messaggio è gestito da WhatsApp secondo la sua informativa e dal ristorante per organizzare il servizio. Conserviamo la conversazione per il tempo necessario alla prenotazione.</p>
+<h3>Cookie e profilazione</h3><p>Questo sito non usa cookie di profilazione né strumenti di tracciamento. Non sono presenti script o font esterni. La mappa Google viene caricata solo dopo il tuo clic; in quel caso Google può trattare i tuoi dati secondo la propria informativa.</p>
+<h3>I tuoi diritti</h3><p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, e revocare il consenso, contattando il titolare ai recapiti sopra. Hai inoltre diritto di reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
+</div>
+</details>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap cols">
+<div><a class="logo" href="#top"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>IL DRAGO ROSSO</b><small>RISTORANTE · BAR · CUCINA TIPICA MARCHIGIANA</small></span></a></div>
+<div><p>Via San Liberio, 58<br>Villanova / Montemaggiore al Metauro<br>61036 Colli al Metauro (PU)</p></div>
+<div><p>Cell / WhatsApp: <a href="https://wa.me/393296945499">329 694 5499</a><br>Fisso: <a href="tel:+390721894696">0721 894696</a><br>Giovedì–Venerdì 16–24 · Sabato–Domenica 11–24</p></div>
+</div>
+<div class="wrap" style="margin-top:26px;font-size:.82rem">© <span id="y"></span> Ristorante Bar Il Drago Rosso · <a href="#privacy" id="fp">Informativa privacy</a></div>
+</footer>
+
+<div class="sticky">
+<a class="btn btn-r" href="#prenota">Prenota</a>
+<a class="btn btn-l" href="tel:+393296945499">Chiama</a>
+</div>
+
+<script>
+(function(){
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return [].slice.call((c||document).querySelectorAll(s))};
+$('#y').textContent=new Date().getFullYear();
+
+/* immagini mancanti: sfondo neutro */
+$$('img').forEach(function(i){i.addEventListener('error',function(){i.style.visibility='hidden'})});
+
+/* lightbox */
+var lb=$('#lb'),lbi=$('#lbi'),lbc=$('#lbc');
+$$('.card').forEach(function(c){c.addEventListener('click',function(){
+ lbi.src=c.dataset.src;lbi.alt=c.dataset.cap;lbc.textContent=c.dataset.cap;
+ if(lb.showModal)lb.showModal();else lb.setAttribute('open','')})});
+$('#lbx').addEventListener('click',function(){lb.close()});
+lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+
+/* mappa al clic */
+$('#mapb').addEventListener('click',function(){
+ var f=document.createElement('iframe');
+ f.src='https://www.google.com/maps?q='+encodeURIComponent('Ristorante Il Drago Rosso, Via San Liberio 58, Colli al Metauro PU')+'&output=embed';
+ f.title='Mappa: Ristorante Il Drago Rosso';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';
+ var m=$('#map');m.innerHTML='';m.style.padding='0';m.appendChild(f)});
+
+/* apri privacy dai link */
+['#pvl','#fp'].forEach(function(s){$(s).addEventListener('click',function(){$('#privacy').open=true})});
+
+/* prenotazione */
+var panes=$$('.pane'),steps=$$('.steps span'),d=$('#d');
+var t=new Date();d.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+function show(n){panes.forEach(function(p,i){p.classList.toggle('on',i===n)});steps.forEach(function(s,i){s.classList.toggle('on',i<=n)});$('#bk').scrollIntoView({block:'start'})}
+function val(n){return ($('input[name='+n+']:checked')||{}).value||''}
+$$('[data-go]').forEach(function(b){b.addEventListener('click',function(){
+ var n=+b.dataset.go;
+ if(n===2){
+  var e=$('#e1');
+  if(!d.value||!$('#o').value){e.textContent='Scegli data e orario preferito per continuare.';return}
+  var w=new Date(d.value+'T12:00').getDay();
+  if(w>=1&&w<=3){e.textContent='Il lunedì, martedì e mercoledì siamo chiusi. Scegli da giovedì a domenica.';return}
+  e.textContent=''}
+ show(n)})});
+$('#bk').addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var n=$('#n').value.trim(),e=$('#e2');
+ if(!n){e.textContent='Inserisci il tuo nome.';return}
+ if(!$('#pv').checked){e.textContent="Per inviare serve il consenso all'informativa privacy.";return}
+ e.textContent='';
+ var p=d.value.split('-'),data=p[2]+'/'+p[1]+'/'+p[0];
+ var asp=val('tipo')==='Ordine Asporto';
+ var msg='Buongiorno, sono '+n+'.\n'+
+  (asp?'Vorrei fare un ORDINE D\'ASPORTO':'Vorrei PRENOTARE UN TAVOLO')+'.\n'+
+  'Turno: '+val('turno')+'\nData: '+data+'\nOrario: '+$('#o').value+'\nPersone: '+val('pp')+'\nPreferenza: '+val('pref')+
+  ($('#nt').value.trim()?'\nNote: '+$('#nt').value.trim():'')+'\nGrazie!';
+ window.open('https://wa.me/393296945499?text='+encodeURIComponent(msg),'_blank','noopener')});
+})();
+</script>
+</body>
+</html>
